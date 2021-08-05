@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      //  var b = 4;
+      //  var l = 5;
+       // var a = l*b;
+
+        //console.log(a );
+  // document.write("is the area of the calculated b and l");
+
+
+//  <!---excircise1--->
+      const list = document.querySelector('ul');
+      const totalbox =document.querySelector('p');
+      let total=0;
+      list.innerHTML ='';
+      totalbox.textContent='';
+      let cartitems =['orange:20.99', 'milk:12.99','noodles:23.99', 'eggs:10.99','soda:12.99'];
+
+      for (let i =0; i < cartitems.length; i++) {
+          let subArray = cartitems[i].split(':');
+          let name =subArray[0];
+          let price = number(subArray[1]);
+          let total =0;
+          let discount =40/100;
+          total += price;
+          let itemstext =name + '- $' + price;
+
+          let listitems = document.createElement('li');
+          listitems.textContent = itemtext;
+          list.appendChild(listitems);
+      }
+
+       // function percentage(num, per){
+         //   return (num/100)*per;
+        //}
+        //console.log(percentage(100, 40.00));
+
+    </script>
+</body>
+</html>
